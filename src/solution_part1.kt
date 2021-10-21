@@ -1,22 +1,65 @@
 fun main() {
-    val x = 123
-    x.reverese()
+
+    try {
+
+
+        print("Please enter the number you want to reverse: ")
+        val number = readLine()?.toInt()
+
+        number?.reveres()
+    }catch (e: NumberFormatException){
+        println("you typed letters please re run the program and type numbers only")
+    }
+
+//----------------------optional part---------------------
+
+    println("please type the sentence that you want the repeated letters that you want to be changed: ")
+
+    var word = readLine()
+        word?.repeatedReplacer()
+
 
 }
 
 
-fun Int.reverese(){
+fun Int.reveres(){
 
 
-    var revereseNum = 0
+    var numberReversed = 0
+    var firstDigit = 0
 
     var num = this
 
     while (num  != 0 ){
-        val remainder = num % 10
-        revereseNum = revereseNum * 10 + remainder
+        firstDigit = num % 10
+        numberReversed = numberReversed * 10 + firstDigit
         num /= 10
     }
-    println(revereseNum)
+    print("you number reversed is: ")
+    println(numberReversed)
 }
 
+
+
+//----------------------optional part---------------------
+
+fun String.repeatedReplacer (){
+
+    var temporary = this
+    println(temporary)
+    var y = 0
+    while (y < this.length-1){
+        var reapeted = ""
+        var reapeted2 = ""
+        if (this[y] == this[y+1]){
+            reapeted += this[y]
+            reapeted2 += this[y+1]
+            temporary = temporary.replace(reapeted,"*")
+            temporary = temporary.replace(reapeted2,"*")
+        }
+        y++
+    }
+
+
+    println(temporary)
+}
