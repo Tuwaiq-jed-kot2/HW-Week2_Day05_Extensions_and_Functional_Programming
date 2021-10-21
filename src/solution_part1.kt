@@ -1,3 +1,25 @@
+//----------------------first part---------------------
+
+fun Int.reveres(){
+
+
+    var numberReversed = 0
+    var firstDigit = 0
+
+    var num = this
+
+    while (num  != 0 ){
+        firstDigit = num % 10
+        numberReversed = numberReversed * 10 + firstDigit
+        num /= 10
+    }
+    print("you number reversed is: ")
+    println(numberReversed)
+}
+
+
+
+
 fun main() {
 
     try {
@@ -21,27 +43,6 @@ fun main() {
 
 }
 
-
-fun Int.reveres(){
-
-
-    var numberReversed = 0
-    var firstDigit = 0
-
-    var num = this
-
-    while (num  != 0 ){
-        firstDigit = num % 10
-        numberReversed = numberReversed * 10 + firstDigit
-        num /= 10
-    }
-    print("you number reversed is: ")
-    println(numberReversed)
-}
-
-
-
-//----------------------optional part---------------------
 
 fun String.repeatedReplacer (){
 
