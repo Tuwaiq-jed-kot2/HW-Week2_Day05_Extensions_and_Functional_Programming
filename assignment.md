@@ -15,7 +15,7 @@ The Kotlin assignment has two components
 ---
 - Create 3 functional chains using map, flatMap, and filter.
 - Using a functional programming approach using this list 
-  val valuesToAdd = listOf(1, 18, 73, 3, 44, 6, 1, 33, 2, 22, 5, 7, 32, 3, 9, 8, 24)
-    1. Exclude any number less than 10.
-    2. Multiply each number by 5.
+  val valuesToAdd = listOf(1, 18, 73, 3, 44, 6, 1, 33, 2, 22, 5, 7, 32, 11, 9, 8, 24)
+    1. Exclude any number less than 7.
+    2. Multiply each number by 2.
     3. Sum the resulting products to produce a final number.
