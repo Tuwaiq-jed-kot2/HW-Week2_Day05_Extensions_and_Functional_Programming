@@ -8,7 +8,7 @@ The Kotlin assignment has two components
 
 ## Part I - Extensions.
 ---
-- Create an extension that replace repetative double characters in string (ex.: aa) to (**). ( optional )
+- Create an extension that replace repetitive double characters in string (ex.: aa) to (**). ( optional )
 - Create an extension that prints any number value in reverse order.
 
 ## Part II - Functional Programming Basics.
