@@ -15,10 +15,12 @@ fun main() {
 
     var sumOfList = 0
 
-    valuesToAdd.filter { it < 7 }
+    valuesToAdd.filter { it > 6 }
                     .map { it *2 }
                         .forEach {sumOfList += it}
 
     println(sumOfList)
+
+
 
 }
