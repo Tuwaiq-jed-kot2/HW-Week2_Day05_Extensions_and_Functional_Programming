@@ -7,6 +7,7 @@ fun main (){
     val drinks = listOf("pepsi","water","cola","coffee")
 
      val foodsAndDrinks = foods.filter { it.length > 5}
+                                    .map { it + " meal" }
                                         .flatMap { drinks.filter { it.length > 4 } + it }
 
         println(foodsAndDrinks)
