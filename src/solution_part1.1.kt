@@ -10,11 +10,6 @@ fun String.replaceRepetitive(){
     the string length is 5 the i  should be in range 0..4, if we leave it without adding the
     (-1) to the string length we will get out of boundaries exception */
     while (i <= this.length-1) {
-        // if the i is the string last index, print index i and break the loop
-        if (i == this.lastIndex) {
-            print(this[i])
-            break
-        } else {
             //if the i index has the same char as the next index (i+1)
             if (this[i] == this[i+1]) {
                 //replace i and i+1 and print the replacement value which is *
@@ -29,6 +24,6 @@ fun String.replaceRepetitive(){
                 print(this[i])
                 i++
             }
-        }
+
     }
 }
