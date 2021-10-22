@@ -6,7 +6,7 @@
 fun main() {
 
     //Question 1
-    val str = "Mohammed"
+    val str = "Moohammed"
     println(str)
     println(str.replaceRepetative())
     println()
@@ -19,15 +19,20 @@ fun main() {
 
 //Question 1
 fun String.replaceRepetative(): String{
-    var temp = ""
-    var index = 0
-        while (index < this.length-1){
-            if (this[index] == this[index+1]){
-                temp += this[index]
-            }
-            index++
-        }
-    val newStr = this.replace(temp,"*")
+    val pattern = "(\\w)\\1+".toRegex()
+    var newStr = this.replace(pattern, "**")
+
+//    it works only if there was one character that's repeated
+//    var temp = ""
+//    var index = 0
+//    while (index < this.length-1){
+//        if (this[index] == this[index+1]){
+//            temp += this[index]
+//        }
+//        index++
+//    }
+//    val newStr = this.replace(temp,"*")
+
     return newStr
 }
 
