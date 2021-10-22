@@ -11,6 +11,10 @@ fun main() {
     println("String solution: ")
     str.replaceRep()
 
+    val str2 = "raajwa isss heere"
+    println("With regex: ")
+    str2.rep()
+
     println()
 
     //- Create an extension that prints any number value in reverse order.
@@ -24,27 +28,28 @@ fun String.replaceRep() {
 
     var x = 0
     while (x <= this.length - 1) {
-
         if (x == this.lastIndex) {
             println(this[x])
             break
         } else {
             if (this[x] == this[x + 1]) {
-
                 val y = this.replace(this[x], '*')
                 val z = this.replace(this[x + 1], '*')
-
                 print(y[x])
                 print(z[x])
-
                 x += 2
-
             } else {
                 print(this[x])
                 x++
             }
         }
     }
+}
+
+//shorter function with regex
+fun String.rep() {
+    val x = "(.)(?=.*\\1)".toRegex()
+    println(this.replace(x,"*"))
 }
 
 fun Int.reverseNum() {

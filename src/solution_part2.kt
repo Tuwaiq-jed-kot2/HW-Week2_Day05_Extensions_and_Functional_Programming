@@ -12,7 +12,7 @@ fun main() {
     //- Using a functional programming approach using this list
 
     var result = 0
-    val valuesToAdd = listOf(1, 18, 73, 3, 44, 6, 1, 33, 2, 22, 5, 7, 32, 11, 9, 8, 24)
+    val valuesToAdd = listOf(1, 18, 73, 3, 44, 6, 13, 33, 2, 22, 5, 7, 32, 11, 9, 8, 24)
                         .filterNot{ it < 7 }
                                 .map { it * 2 }
    // println(valuesToAdd)
@@ -20,7 +20,6 @@ fun main() {
                                          result += it
                                      }
     println(result)
-
 }
 
     class Data(val items: List<String>)
