@@ -17,4 +17,11 @@ fun main() {
         }
 
     println(finalNumber)
+
+    val vegetable = listOf("Carrot", "Lettuce", "Cucumber")
+    val fruit = listOf("Apple", "Grapes", "Watermelon")
+
+    val grocery = vegetable.flatMap { fruit }
+
+    println(grocery)
 }
