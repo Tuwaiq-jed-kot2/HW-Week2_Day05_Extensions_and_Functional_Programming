@@ -1,24 +1,27 @@
 /*---------------------------------Part II------------------------------------------*/
 /*--------------------------------Answer Q1 -----------------------------------------*/
 //fun main() {
-//    val word:String="mohammed"
-//    word.replaceRepetitive()
+//    val word:String
+//    word = "mohammed"
+//    print( word.removeDublChar())
 //}
-//fun String.replaceRepetitive() {
+//
+//fun String.removeDublChar() {
+//    val builder = StringBuilder()
 //    var i = 0
-//    while (i <= this.length -1) {
-//        if (this[i] == this[i + 1]) {
-//            val char1 = this.replace(this[i], '*')
-//            val char2 = this.replace(this[i + 1], '*')
-//            print(char1[i])
-//            print(char2[i + 1])
-//            i += 2
-//        } else {
-//            print(this[i])
-//            i++
+//    while (i < builder.length) {
+//        var foundCount = 0
+//        for (j in i - 1 downTo 0) {
+//            if ((builder[i]) == (builder[j])) {
+//                foundCount++
+//            } else {
+//                break
+//            }
 //        }
+//        i++
 //    }
 //}
+
 /*--------------------------------Answer Q2 -----------------------------------------*/
 //fun main() {
 //    q@ while (true)
