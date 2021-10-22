@@ -13,8 +13,11 @@ fun Int.student() {
 
 // حل البونس
 //Create an extension that replace repetative double characters in string (ex.: aa) to (**).
-fun main() {
-    val company = "Mobily"
-    val x = company.replace("i"+"l", "*"+"*")
-    println(x)
+fun main(args: Array<String>) {
+    var xx = arrayOf("a","aa","aaa","aaaa")
+    val re = Regex("a(a+)")
+    xx.forEach {t->
+        val result = re.replace(t,"**")
+        println(result)
+    }
 }
