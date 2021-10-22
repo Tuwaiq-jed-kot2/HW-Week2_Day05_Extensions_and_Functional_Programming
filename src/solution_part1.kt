@@ -1,7 +1,7 @@
                             /***** Q1 - Extensions..*****/
 
 fun main() {
-    val R = "azam abdullah"                     //testing repetitive extension
+    val R = "azzam abdullah"                     //testing repetitive extension
     println(R.RepetitiveChar())
     /*------------------------------------------------------------------------------*/
     val N = 562                                 //testing reverse extension
@@ -15,7 +15,7 @@ fun String.RepetitiveChar(): String {
     var RepCh = this
     RepCh.forEachIndexed() { index, a ->        //- forEachIndexed- function that takes the index of a character and the character itself and performs the action on the character.
         if (a == this[index])                   // her in -if- we check char by char to change the repetitive characters to -**- with function -.replace-
-            RepCh = RepCh.replace("$a$a", "*")         //build in function make codding much easier (^-^)
+            RepCh = RepCh.replace("$a$a", "**")         //build in function make codding much easier (^-^)
     }
     return RepCh
 }
