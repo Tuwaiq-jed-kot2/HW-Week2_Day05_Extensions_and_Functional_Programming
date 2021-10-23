@@ -1,27 +1,17 @@
 /*---------------------------------Part II------------------------------------------*/
 /*--------------------------------Answer Q1 -----------------------------------------*/
-//fun main() {
-//    val word:String
-//    word = "mohammed"
-//    print( word.removeDublChar())
-//}
-//
-//fun String.removeDublChar() {
-//    val builder = StringBuilder()
-//    var i = 0
-//    while (i < builder.length) {
-//        var foundCount = 0
-//        for (j in i - 1 downTo 0) {
-//            if ((builder[i]) == (builder[j])) {
-//                foundCount++
-//            } else {
-//                break
-//            }
-//        }
-//        i++
-//    }
-//}
+fun main() {
+    val word:String
+    word = "Saeed"
+    print( word.replaceRepetative())
+}
 
+fun String.replaceRepetative(): String {
+    val changingTheDouble = "(\\w)\\1+".toRegex()
+    var newChar = this.replace(changingTheDouble, "**")
+
+    return newChar
+}
 /*--------------------------------Answer Q2 -----------------------------------------*/
 //fun main() {
 //    q@ while (true)
