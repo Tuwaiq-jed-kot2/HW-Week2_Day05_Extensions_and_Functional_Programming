@@ -4,7 +4,7 @@ fun main() {
 
     var finalNum = 0
 
-    valuesToAdd.filter {  it > 7 }.map { it * 2 }.forEach { finalNum += it }
+    valuesToAdd.filter {  it >= 7 }.map { it * 2 }.forEach { finalNum += it }
 
     println("$finalNum")
 
