@@ -4,6 +4,6 @@ fun main() { // part1-2
 }
 
 fun Any.reverse(){
-    println(this.toString().reversed())
+    println(this.toString().reversed().toInt())
 
 }
